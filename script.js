@@ -20,7 +20,7 @@ document.getElementById("larks").addEventListener('click', function (){
 )
 
 document.getElementById("blitzes").addEventListener('click', function (){
-    const generated = Math.floor(Math.random() * 5);
+    const generated = Math.floor(Math.random() * 6);
     const datalist = JSON.parse(blitzData);
     const blitzWords = datalist[generated].word.split(",");
     let newblock="";
