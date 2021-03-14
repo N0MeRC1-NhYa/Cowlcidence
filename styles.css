@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 969px;
+    background-image: url(https://image.freepik.com/free-photo/the-surface-of-the-wooden-table-isolated-on-white_94064-74.jpg);
+    background-size: 100%;
+    
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 35px;
+}
+.card{
+    min-width:350px;
+    height: 50%;
+    horiz-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin:5%;
+    padding:20px;
+    border-radius: 15px;
+    align-items: center;
+    flex-direction: column;
+}
+.owls{
+    background-color: cornflowerblue;
+}
+.blitz{
+    background-color: darkorange;
+}
+.lark{
+    background-color: forestgreen;
+}
+
+.text-field{
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+#timer{
+    width:60px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 55px;
+}
