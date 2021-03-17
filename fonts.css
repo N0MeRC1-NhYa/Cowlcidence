@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Pencil';
+    src: url("fonts/pencil.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'PenHead';
+    src: url("fonts/pencil-for-heading.ttf") format("truetype");
+}

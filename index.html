@@ -4,24 +4,36 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="styles.css" rel="stylesheet">
+    <link href="fonts.css" rel="stylesheet">
 </head>
 <body>
+<div class="language">
+    <button class="change-lang"></button>
+</div>
 <div class="cards">
     <div class="owls card" id ="owls">
-        <h2>Совы</h2>
+        <div class="card-name">
+            <h2>Совы</h2>
+            <p>Раунд на совпадения</p>
+        </div>
         <div class="text-field" id="owl">Здесь будет слово</div>
     </div>
     <div class="lark card" id ="larks">
-        <h2>Жаворонки</h2>
+        <div class="card-name">
+            <h2>Жаворонки</h2>
+            <p>Раунд на несовпадение</p>
+        </div>
         <div class="text-field" id="lark">Здесь будет слово</div>
     </div>
     <div class="blitz card" id ="blitzes">
-        <h2>Блиц</h2>
+        <div class="card-name">
+            <h2>Блиц</h2>
+            <p>Раунд на совпадения</p>
+        </div>
         <div class="text-field" id="blitz">Здесь будет слово</div>
     </div>
 </div>
 <div id="timer">
-
 </div>
 </body>
 <script src="script.js"></script>
