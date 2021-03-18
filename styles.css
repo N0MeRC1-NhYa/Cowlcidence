@@ -44,10 +44,17 @@ body{
     margin-top: 150px;
 }
 #timer{
-    width:60px;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
     margin-left:auto;
     margin-right:auto;
     font-size: 55px;
+    /*background-color: deepskyblue;*/
+    transition: background-color 60s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .card-name{
     display: flex;
@@ -61,18 +68,12 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-top: 35px;
+    padding-top: 35px;
 }
-button.change-lang{
+button#change-lang{
     width:100px;
     height:75px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg");
-    background-size: cover;
-}
-button.change-lang:checked{
     background-image: url("https://st.depositphotos.com/2711989/3513/v/600/depositphotos_35135847-stock-illustration-british-union-jack-flag.jpg");
     background-size: cover;
-}
-button.change-lang:focus{
-    padding: 10px;
+    background-position: center;
 }

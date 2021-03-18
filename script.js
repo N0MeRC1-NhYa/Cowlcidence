@@ -31,15 +31,21 @@ document.getElementById("blitzes").addEventListener('click', function (){
     setTimer();
     }
 )
+
+
 function setTimer(){
     let timer; // пока пустая переменная
     let x = 60; // стартовое значение обратного отсчета
     countdown(); // вызов функции
     function countdown(){  // функция обратного отсчета
-        document.getElementById('timer').innerHTML = x;
+        document.getElementById('timer').innerHTML = "<p>" + x + "</p>";
         x--; // уменьшаем число на единицу
         if (x<0){
             clearTimeout(timer); // таймер остановится на нуле
+            alert("Time's up!");
+            setInterval(function (){
+                document.getElementById('timer').innerHTML = "<p>" + 60 + "</p>";
+            }, 1000);
 
         }
         else {
@@ -47,3 +53,46 @@ function setTimer(){
         }
     }
 }
+
+let flag = 0;
+
+document.getElementById("change-lang").addEventListener('click', function () {
+        if (flag === 0) {
+            document.getElementById("change-lang").style.backgroundImage ="url('https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg')";
+            flag = 1;
+            const textField = document.getElementsByClassName("text-field");
+            for (let field = 0; field < textField.length; field++){
+                textField[field].innerHTML = "<p>Word will be here</p>";
+            }
+            document.getElementById("owl-heading").innerText = "Owls";
+            document.getElementById("lark-heading").innerText = "Larks";
+            document.getElementById("blitz-heading").innerText = "Blitz";
+            const cons = document.getElementsByClassName("cons");
+            for (let i = 0; i < cons.length; i++){
+                cons[i].innerHTML = "<p>Coincidence round</p>";
+            }
+            let nonCons = document.getElementsByClassName("non-cons");
+            for (let i = 0; i < cons.length; i++){
+                nonCons[i].innerHTML = "<p>Non-coincidence round</p>";
+            }
+        } else{
+            document.getElementById("change-lang").style.backgroundImage = "url('https://st.depositphotos.com/2711989/3513/v/600/depositphotos_35135847-stock-illustration-british-union-jack-flag.jpg')";
+            flag = 0;
+            const textField = document.getElementsByClassName("text-field");
+            for (let field = 0; field < textField.length; field++){
+                textField[field].innerHTML = "<p>Здесь будет слово</p>";
+            }
+            document.getElementById("owl-heading").innerText = "Совы";
+            document.getElementById("lark-heading").innerText = "Жаворонки";
+            document.getElementById("blitz-heading").innerText = "Блиц";
+            const cons = document.getElementsByClassName("cons");
+            for (let i = 0; i < cons.length; i++){
+                cons[i].innerHTML = "<p>Раунд на совпадения</p>";
+            }
+            let nonCons = document.getElementsByClassName("non-cons");
+            for (let i = 0; i < cons.length; i++){
+                nonCons[i].innerHTML = "<p>Раунд на несовпадения</p>";
+            }
+        }
+    }
+)

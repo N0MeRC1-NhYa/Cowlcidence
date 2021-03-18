@@ -8,32 +8,33 @@
 </head>
 <body>
 <div class="language">
-    <button class="change-lang"></button>
+    <button id="change-lang"></button>
 </div>
 <div class="cards">
     <div class="owls card" id ="owls">
         <div class="card-name">
-            <h2>Совы</h2>
-            <p>Раунд на совпадения</p>
+            <h2 id ="owl-heading">Совы</h2>
+            <p class = "cons">Раунд на совпадения</p>
         </div>
         <div class="text-field" id="owl">Здесь будет слово</div>
     </div>
     <div class="lark card" id ="larks">
         <div class="card-name">
-            <h2>Жаворонки</h2>
-            <p>Раунд на несовпадение</p>
+            <h2 id ="lark-heading">Жаворонки</h2>
+            <p class = "non-cons">Раунд на несовпадение</p>
         </div>
         <div class="text-field" id="lark">Здесь будет слово</div>
     </div>
     <div class="blitz card" id ="blitzes">
         <div class="card-name">
-            <h2>Блиц</h2>
-            <p>Раунд на совпадения</p>
+            <h2 id ="blitz-heading">Блиц</h2>
+            <p class = "cons">Раунд на совпадения</p>
         </div>
         <div class="text-field" id="blitz">Здесь будет слово</div>
     </div>
 </div>
 <div id="timer">
+    <p>60</p>
 </div>
 </body>
 <script src="script.js"></script>
