@@ -7,7 +7,7 @@ const blitzData = '[{"word" : "топливо,архитектурный сти�
 
 
 document.getElementById("owls").addEventListener('click', function (){
-    const generated = Math.floor(Math.random() * owlData.length);
+    const generated = Math.floor(Math.random() * 27);
     const datalist = JSON.parse(owlData);
     console.log(datalist);
     document.getElementById("owl").innerHTML = "<p>" + datalist[generated].word + "</p>";
@@ -17,7 +17,7 @@ document.getElementById("owls").addEventListener('click', function (){
 )
 
 document.getElementById("larks").addEventListener('click', function (){
-    const generated = Math.floor(Math.random() * larkData.length);
+    const generated = Math.floor(Math.random() * 24);
     const datalist = JSON.parse(larkData);
     document.getElementById("lark").innerHTML = "<p>"  + datalist[generated].word + "</p>";
     alert(larkData.length);
@@ -26,7 +26,7 @@ document.getElementById("larks").addEventListener('click', function (){
 )
 
 document.getElementById("blitzes").addEventListener('click', function (){
-    const generated = Math.floor(Math.random() * blitzData.length);
+    const generated = Math.floor(Math.random() * 16);
     const datalist = JSON.parse(blitzData);
     const blitzWords = datalist[generated].word.split(",");
     let newblock="";
