@@ -7,7 +7,7 @@ body{
     height: 969px;
     background-image: url(https://w-dog.ru/wallpapers/15/11/462866441166847.jpg);
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     
 }
 .cards{
@@ -18,7 +18,8 @@ body{
 }
 .card{
     min-width:300px;
-    height: 50%;
+    max-width:450px;
+    height:450px;
     horiz-align: center;
     display: flex;
     justify-content: space-between;
@@ -40,8 +41,7 @@ body{
 }
 
 .text-field{
-    margin-bottom: 150px;
-    margin-top: 150px;
+    margin: auto 15px auto 15px;
 }
 #timer{
     width:100px;
